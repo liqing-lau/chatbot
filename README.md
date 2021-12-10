@@ -4,7 +4,7 @@
 
 Fork the repo
 ```
-git clone https://github.com/<your_username>/smoolah.git
+git clone https://github.com/<your_username>/chatbot.git
 cd smoolah
 ```
 
