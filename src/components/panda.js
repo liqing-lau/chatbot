@@ -8,4 +8,4 @@ class Panda extends Component {
     }
 }
 
-export default Panda
+export default Panda;
