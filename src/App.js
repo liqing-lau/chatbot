@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react'
 
 import NavBar from "./components/NavBar";
+import ProductDisplay from './components/ProductDisplay';
 
 function App() {
   return (
@@ -22,7 +23,10 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <NavBar /> 
+    <div>
+      <NavBar /> 
+      <ProductDisplay />
+    </div>
 
   );
 }
