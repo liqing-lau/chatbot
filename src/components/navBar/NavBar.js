@@ -1,9 +1,15 @@
 import React, {useState} from "react";
 import "./NavBar.css";
+import SearchBar from "./SearchBar";
+import SignInForm from "./SignInForm";
 
 function NavBar() {
 
     const [message, setMessage] = useState("Dummy div. Should show components!");
+    const [showSearchModal, setShowSearchModal] = useState(false);
+    const [showSignInModal, setShowSignInModal] = useState(false);
+
+
 
     function homeBtnHandler() {
         // ADD IN NEW COMPONENTS FOR FUTURE PAGES.
@@ -15,11 +21,16 @@ function NavBar() {
     }
 
     function searchIconHandler() {
-        setMessage("Search bar should be shown");
+        setShowSearchModal(prevState => !prevState);
     }
 
+    function signInHandler() {
+        setShowSignInModal(prevState => !prevState);
+    }
+
+
     return (
-        <div>
+        <header>
             <ul>
                 <li><div onClick={homeBtnHandler}>Home</div></li>
                 <li className="dropdown">
@@ -52,15 +63,17 @@ function NavBar() {
                             </svg>  
                         </div>
                     </li>
-                    <li><div>Sign in</div></li>
+                    <li><div onClick={signInHandler}>Sign in</div></li>
                     <li><div>Sign up</div></li>
                 </div>
             </ul>
 
             <div>
                 <h1>{message}</h1>
+                {showSearchModal && <SearchBar onHideModal={searchIconHandler}/>}
+                {showSignInModal && <SignInForm onHideModal={signInHandler}/>}
             </div>
-        </div>
+        </header>
     )
 };
 

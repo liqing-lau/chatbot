@@ -1,32 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react'
+import React from 'react';
+import classes from './App.module.css';
 
-import NavBar from "./components/NavBar";
-import ProductDisplay from './components/ProductDisplay';
+import NavBar from './components/navBar/NavBar';
+import ProductDisplay from "./components/ProductDisplay";
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <div>
+    <React.Fragment>
       <NavBar /> 
-      <ProductDisplay />
-    </div>
+      <div className={classes["float-container"]}>
+          <div className={classes["float-child"]}>
+            {/* filter */}
+          </div>
+
+          <ProductDisplay className={classes["float-child"]}/>
+      </div>
+    </React.Fragment>
 
   );
 }
