@@ -2,6 +2,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 18rem;
+    border: 1px solid black;
+    overflow:hidden;
 }
 
 .card:hover {
@@ -9,13 +11,16 @@
 }
 
 .text {
-    padding: 16px;
+    width: auto;
+    height: 100%;
+    padding: 10%;
     background-color: rgb(128, 255, 212);
     border-top:1px solid black;
 }
 
 img {
-    width:"100%";
+    width:100%;
+    height: auto;
 }
 
 .smallText {

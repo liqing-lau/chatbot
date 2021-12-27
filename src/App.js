@@ -2,7 +2,8 @@ import React from 'react';
 import classes from './App.module.css';
 
 import NavBar from './components/navBar/NavBar';
-import ProductDisplay from "./components/ProductDisplay";
+import ProductDisplay from './components/productDisplay/productDisplay';
+import Filter from './components/filter/Filter';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <NavBar /> 
       <div className={classes["float-container"]}>
           <div className={classes["float-child"]}>
-            {/* filter */}
+            <Filter />
           </div>
 
           <ProductDisplay className={classes["float-child"]}/>
