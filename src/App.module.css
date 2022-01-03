@@ -1,3 +1,13 @@
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.float-child {
+  width: 25%;
+  float: left;
+}  
+
 .App {
   text-align: center;
 }

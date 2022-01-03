@@ -1,0 +1,94 @@
+.form-header h1 {
+    text-align: center;
+}
+
+.form-header h1 button {
+    position: absolute;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+    border: 1px solid black;
+    cursor:pointer;
+}
+
+.form-header h1 button:hover,
+.form-header h1 button:active {
+    background-color: red;
+    border-color: #292929;
+}
+
+.form-control input,
+.form-control label{
+    display:block;
+}
+
+.form-control label {
+    font:inherit;
+    font-weight:bold;
+    margin-bottom: 0.5rem;
+    position: relative;
+    left: 10%;
+}
+
+.form-control input,
+.form-control select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #0cdf8e9c;
+    background-color: #49dda49c;
+}
+
+
+
+.form-action {
+    text-align: center;
+}
+
+.form-action button{
+    font:inherit;
+    background-color: #240370;
+    color: white;
+    border: 1px solid #240370;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-action button:hover,
+.form-action button:active {
+    background-color: #33059e;
+    border-color: #33059e;
+}
+
+.form-action button:disabled,
+.form-action button:disabled:hover,
+.form-action button.disabled:active{
+    background-color: #ccc;
+    color: #292929;
+    border-color:#ccc;
+    cursor: not-allowed;
+}
+
+.invalid input{
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+}
+
+.invalid input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+}
+
+.error-text {
+    color:red;
+    text-align: center;
+}
